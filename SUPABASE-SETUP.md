@@ -1,6 +1,6 @@
 # Configuration Supabase
 
-1. Créer un projet Supabase dédié à The Lemon Tree.
+1. Créer un projet Supabase dédié à La Pièce d’Après.
 2. Exécuter les fichiers SQL du dossier `supabase/` dans l’ordre documenté.
 3. Vérifier que les buckets `project-images`, `project-documents`, `avatars`, `ai-inspirations` sont privés.
 4. Activer la confirmation e-mail selon la politique choisie.

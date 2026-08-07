@@ -1,7 +1,7 @@
 # Déploiement
 
 ## GitHub
-Créer un dépôt neuf `the-lemon-tree`, puis pousser uniquement le contenu du projet. Ne jamais versionner `.env.local`, `.vercel` ou `node_modules`.
+Créer un dépôt neuf `la-piece-d-apres`, puis pousser uniquement le contenu du projet. Ne jamais versionner `.env.local`, `.vercel` ou `node_modules`.
 
 ## Supabase
 Créer un projet neuf. Exécuter `supabase/schema.sql`, `supabase/policies.sql`, `supabase/storage.sql`, puis `supabase/functions.sql`.
