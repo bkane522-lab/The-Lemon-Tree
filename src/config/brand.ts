@@ -4,14 +4,14 @@ export const brand = {
   tagline: "Intérieur sur mesure, espaces qui vous ressemblent.",
 
   logo: {
-    primary: "/brand/logo-primary.png",
-    dark: "/brand/logo-dark.png",
-    light: "/brand/logo-light.png",
-    horizontal: "/brand/logo-horizontal.png",
-    square: "/brand/logo-square.png",
-    favicon: "/brand/favicon.png",
-    appleTouchIcon: "/brand/apple-touch-icon.png",
-  },
+  primary: "/brand/logo-primary.png",
+  dark: "/brand/logo-primary.png",
+  light: "/brand/logo-primary.png",
+  horizontal: "/brand/logo-primary.png",
+  square: "/brand/logo-primary.png",
+  favicon: "/brand/logo-primary.png",
+  appleTouchIcon: "/brand/logo-primary.png",
+},
 
   colors: {
     ivory: "#F4EFE7",
