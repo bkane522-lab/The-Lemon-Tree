@@ -1,12 +1,18 @@
 {
-  "name": "The Lemon Tree — INTERIOR DESIGN",
-  "short_name": "The Lemon Tree",
+  "name": "La Pièce d’Après",
+  "short_name": "La Pièce d’Après",
+  "description": "Application de décoration et d’aménagement intérieur sur mesure.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#F7F1E5",
-  "theme_color": "#143A2A",
-  "description": "Application client de décoration d’intérieur The Lemon Tree.",
+  "background_color": "#F4EFE7",
+  "theme_color": "#B96E3F",
+  "orientation": "portrait-primary",
   "icons": [
-    {"src":"/brand/lemontree.png","sizes":"1024x1024","type":"image/png","purpose":"any"}
+    {
+      "src": "/brand/logo-primary.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
   ]
 }
