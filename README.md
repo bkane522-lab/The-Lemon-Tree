@@ -1,26 +1,29 @@
 # La Pièce d’Après
 
-Application web professionnelle pour une activité de décoration et d’aménagement intérieur sur mesure.
-
-**Signature :** Intérieur sur mesure, espaces qui vous ressemblent.
-
-## Stack
-Next.js App Router, TypeScript, Tailwind CSS, Supabase Auth/PostgreSQL/Storage, Vercel.
-
-## Identité
-La marque est centralisée dans `src/config/brand.ts`. Le logo principal validé est `public/brand/logo-primary.png`. Les autres emplacements de logo utilisent actuellement la même identité validée afin de préserver la cohérence de marque jusqu’à la création éventuelle de déclinaisons dédiées.
-
-Palette principale : ivoire, beige lin, taupe, terracotta, brun noyer, vert sauge, vert profond, noir encre et blanc cassé.
+Application web de décoration et d’aménagement intérieur : site public, comptes clients, suivi de projets, espace administrateur et intégration Supabase.
 
 ## Démarrage
-1. Copier `.env.example` vers `.env.local`.
-2. Renseigner les variables d’environnement sans jamais versionner les clés réelles.
-3. Installer les dépendances : `npm install`.
-4. Exécuter les scripts SQL Supabase dans l’ordre indiqué dans `supabase/README.md`.
-5. Lancer `npm run dev`.
 
-## Vérifications avant production
-Exécuter `npm test`, `npm run lint`, `npm run typecheck` et `npm run build`.
+```bash
+npm install
+npm run typecheck
+npm run build
+npm run dev
+```
 
-## État actuel
-L’identité « La Pièce d’Après » est désormais centralisée dans le projet. L’architecture, les premiers écrans, le schéma SQL, les politiques RLS, le stockage, la PWA et la documentation initiale sont présents. Les fonctionnalités métier doivent encore être reliées et testées avec une instance Supabase réelle avant mise en production.
+Copier `.env.example` vers `.env.local` et renseigner les variables Supabase avant de tester l’authentification et les données.
+
+## Variables Vercel
+
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+- `SUPABASE_SERVICE_ROLE_KEY` (serveur uniquement, ne jamais exposer)
+- `NEXT_PUBLIC_SITE_URL`
+
+## Supabase
+
+Le dossier `/supabase` contient le schéma de référence. Le projet Supabase déjà configuré dans le dashboard reste la source de vérité pour les tables et policies réellement appliquées.
+
+## Important
+
+Les coordonnées légales et de contact ne sont pas inventées. Compléter `src/config/brand.ts` avant la mise en production commerciale.

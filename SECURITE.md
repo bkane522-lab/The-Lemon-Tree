@@ -1,11 +1,7 @@
 # Sécurité
 
-- RLS activée sur les tables métier.
-- Le client ne peut consulter que ses propres projets/fichiers/rendez-vous/notifications.
-- Les messages `is_internal=true`, `admin_notes` et `ai_inspirations` sont réservés aux admins.
-- Le rôle admin n’existe pas dans le formulaire public.
-- `SUPABASE_SERVICE_ROLE_KEY` est réservée au serveur.
-- Les buckets sont privés ; utiliser des URL signées après autorisation.
-- Le middleware protège `/espace-client` et `/admin` ; la sécurité principale reste également imposée par RLS.
-- Aucune erreur brute Supabase ne doit être présentée à l’utilisateur final.
-- Les uploads doivent encore être reliés à une route serveur avec validation MIME/taille et renommage sécurisé avant production.
+- Les droits de données reposent sur les policies RLS Supabase.
+- `SUPABASE_SERVICE_ROLE_KEY` ne doit jamais être placée dans un fichier public, GitHub ou une variable `NEXT_PUBLIC_*`.
+- L’API `/api/upload` vérifie le token utilisateur, la propriété du projet, le type et la taille du fichier avant d’utiliser la clé service côté serveur.
+- Buckets attendus : `project-images`, `project-documents`, `avatars`, tous privés.
+- Les rôles administrateur sont vérifiés depuis `profiles.role`, pas depuis les métadonnées modifiables par le client.
